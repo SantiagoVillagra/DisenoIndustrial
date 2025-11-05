@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta name="descriptiont" content="Portfolio personal SantiagoVillagra" />
+  <title>SantiagoVillagra</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header container">
+    <nav>
+      <ul class="header__menu">
+        <li>
+          <a class="header__link" href="#about">Sobre mí</a>
+        </li>
+        <li>
+          <a class="header__link" href="#featured">Proyectos</a>
+        </li>
+        <li>
+          <a class="header__link" href="#contact">Contacto</a>
+        </li>
+      
+        <li>
+          <a class="header__link" href="https://github.com/SantiagoVillagra" target="_blank" aria-label="GitHub">
+            <svg height="32" width="32" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 
+              0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+              -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2
+              -3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.5
+              7.5 0 012.01-.27c.68 0 1.36.09 2.01.27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08
+              2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01
+              1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+            </svg>
+          </a>
+        </li>
+
+        <li class="header__liner"></li>
+        <li>
+          <button id="theme-toggle" class="header__sun theme-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+            </svg>
+
+          </button>
+        </li>
+        <li>
+          <a class="header__resume btn" href="/dowload/CV Santiago Martin Villagra.pdf" target="_blank">Curriculum</a>
+        </li>
+      </ul>
+      <button class="header__bars">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M3 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 5.25Zm0 4.5A.75.75 0 0 1 3.75 9h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 9.75Zm0 4.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Zm0 4.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+            clip-rule="evenodd" />
+        </svg>
+
+      </button>
+    </nav>
+  </header>
+  <!-- Mobile Navigation -->
+   <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li><a  class="mobile-nav__link"  href="#about">Sobre mí</a></li>
+          <li><a  class="mobile-nav__link"  href="#featured">Proyectos</a></li>
+          <li><a  class="mobile-nav__link"  href="#contact">Contacto</a></li>
+          <li>
+            <a class="header__link" href="https://github.com/SantiagoVillagra" target="_blank" aria-label="GitHub">
+              <svg height="32" width="32" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 
+                0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+                -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2
+                -3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.5
+                7.5 0 012.01-.27c.68 0 1.36.09 2.01.27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08
+                2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01
+                1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+            </a>
+          </li>
+
+          <li class="mobile-nav__link-line"></li>
+          
+          <li > 
+            <button id="theme-toggle" class="mobile-nav__sun">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+              </svg>
+  
+            </button>
+          </li>
+          <li>
+            <a class="header__resume btn" href="/dowload/CV Santiago Martin Villagra.pdf" target="_blank">Curriculum</a>
+          </li>
+        </ul>
+      </nav>
+   </div>
+  <!-- End Mobile Navigation -->
+
+  <main>
+    <section class="hero container">
+      <img  class="hero__img" src="./images/cv.jpg" alt="SantiagoVillagraPhoto">
+      <h2 class="hero__subtitle">Hola, Soy Santiago Villagra</h2>
+      <h1 class="hero__title">Front-End web developer</h1>
+      <p class="hero__description">Desarrollador web <strong>Frontend/FullStack</strong> , <br> centrado en la resolución de
+        problemas a través de un software <strong> intuitivo, funcional y accesible </strong>.</p>
+      <a class="hero__btn btn" href="#contact">Hablemos</a>
+    </section>
+    <section id="about" class="about container section">
+      <div class="about__content">
+        <h2 class="about__title">Sobre mí</h2>
+        <p class="about__description">Hola! mi nombre es Santiago y soy desarrollador <strong> FullStack</strong>.
+          Además soy diseñador industrial.
+          Desde mis inicios en el diseño industrial me di cuenta que mi pasión se ubica en la resolución de problemas.
+        </p>
+        <p class="about__description"> En el desarrollo web encontré la herramienta que me permite poder solucionarlos
+          mediante el desarrollo de software específico, que sea funcional, intuitivo y accesible.</p>
+        <p class="about__description">
+          Mi objetivo principal continuar mi formacion y crecimiento profesional, adquiriendo nuevas herramientas que me
+          permitan poder brindar soluciones mas eficientes.</p>
+        <hr class="about__hr">
+        <h3 class="about__subtitle">Stack tecnologico</h3>
+        <div class="about__ul-container">
+
+          <ul class="about__ul">
+            <li class="about__list">HTML</li>
+            <li class="about__list">CSS</li>
+            <li class="about__list">Javascript (ES6+)</li>
+
+          </ul>
+          <ul class="about__ul">
+            <li class="about__list">ReactJS</li>
+            <li class="about__list">Node</li>
+            <li class="about__list">MongoDB</li>
+
+          </ul>
+          <ul class="about__ul">
+            <li class="about__list">PostgreSQL</li>
+            <li class="about__list">Adobe Illustrator</li>
+            <li class="about__list">Photoshop</li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="about__img-wrapper">
+        <img class="about__img lazy loading" src="https://fakeimg.pl/1000x941" data-src="./images/about.jpg" alt="SantiagoAbout">
+      </div>
+    </section>
+    <section id="featured" class="featured container section">
+      <h3 class="featured__subtitle">Proyectos destacados</h3>
+      <div class="featured__wrapper">
+        <h2 class="featured__title">SHOPSPORT</h2>
+        <a class="featured__link" href="https://pf-henry-trabajofinal.vercel.app/home">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+          </svg>
+
+        </a>
+      </div>
+
+      <p class="featured__description">
+        Plataforma de eCommerce para la venta zapatillas deportivas.
+      </p>
+      <div class="featured__info-container">
+        <div>
+          <h3 class="featured__label">Tecnologías</h3>
+          <ul class="featured__tech-stack">
+            <li class="featured__info">React</li>
+            <li class="featured__info">JavaScript</li>
+            <li class="featured__info">Redux</li>
+            <li class="featured__info">NodeJs</li>
+            <li class="featured__info">Sequelize</li>
+            <li class="featured__info">Express</li>
+            <li class="featured__info">StyledComponents</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="featured__label">Trabajo</h3>
+          <p class="featured__info">FullStack</p>
+        </div>
+        <div>
+          <h3 class="featured__label">Duración</h3>
+          <p class="featured__info">Julio 2024 - Sep 2024 </p>
+        </div>
+      </div>
+      <div class="featured__img-container">
+        
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://fakeimg.pl/2730x1468" data-src="./images/sp-home.png" alt="ShopSport screenshots home">
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://fakeimg.pl/2730x1468" data-src="./images/sp-login.png" alt="ShopSport screenshots login">
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://fakeimg.pl/2730x1468" data-src="./images/sp-capturas-04.jpg" alt="ShopSport screenshots detail">
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://fakeimg.pl/2730x1468" data-src="./images/sp-capturas-05.jpg" alt="ShopSport screenshots products">
+        </div>
+
+      </div>
+      </section>
+  
+      <section id="contact" class="contact container section">
+        <h2 class="contact__title">Hablemos!</h2>
+        <p class="contact__description"> Si estas interesado en llevar tu idea a un plano  digital e innovador, no dudes en escribirme. 
+        </p>
+          <a  class="contect__btn btn" href="mailto:sanmavillagra@gmail.com" target="_blank">Contactame</a>
+      </section>
+      </main>
+      <footer class="footer container section">
+        <h3 class="footer__title">Santiago Villagra</h3>
+      </footer>
+      <script type="module" src="./src/main.js"></script>
+      </body>
+      </div>
+      
+      </html>
